@@ -82,6 +82,7 @@ function setAlarm(time, fetching = false) {
 }
 
 // Alarms set by user Dislayed in HTML 
+// this function adds the alarm set by user in the form of list along with delete button
 function addAlaramToDom(time, intervalId) {
   const alarm = document.createElement("div");
   alarm.classList.add("alarm", "mb", "flex");

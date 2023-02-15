@@ -48,7 +48,11 @@ Just download the zip and run LIVE_SERVER.
 ## 🚦Version
 1.0 - Added Local Storage to the base Project
 ## 👦Contact
-🔗 Author - @Dhananjay Khodaskar - ya695678@gmail.com / dhananjaykhodaskar27@gmai.com - +91-7057218243
+🔗 Author - @Dhananjay Khodaskar 
+
+ya695678@gmail.com / dhananjaykhodaskar27@gmai.com 
+
++91-7057218243
 
 ✅ Linkedin ✅ https://www.linkedin.com/in/dhananjay-khodaskar-5333b2239 ✅
 

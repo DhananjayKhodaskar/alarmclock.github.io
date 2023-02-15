@@ -13,26 +13,35 @@
 </head>
 <body>
     <div class= "page-title">
+      <!-- page title  -->
       <h1 >ALARM CLOCK  </h1>
     </div>
+    <!-- main container -->
     <div class="container-main flex">
+      <!-- the smaller clock container that containes clock -->
       <div class="container-clock flex glass">
+        <!-- the clock icon tag -->
         <img src="./icon.png" alt="" />
+        <!-- the current time div(that we will  be using to display current time) -->
         <div class="current-time mb white-text" id= "current-time">_ : _ : _ </div>
         <form class="alarm-form flex mb ">
           <div>
+            <!-- hours select tag -->
           <select name="hour" id="hour" required></select>
-
+            <!-- minutes select tag -->
           <select required name="minute" id="minute"></select>
-
+            <!-- seconds select tag -->
           <select required name="second" id="second"></select>
+          <!-- am/pm select tag -->
           <select required name="am-pm" id="am-pm">
             <option value="AM">AM</option>
             <option value="PM">PM</option>
           </select>
           </div>
+          <!-- 'set alarm' button -->
           <button class="btn submit-btn" id="submitBtn" type="submit">&nbsp;Set Alarm&nbsp;</button>
         </form>
+        <!-- alarm list container(that contains all the alarms set by user in list type) -->
         <div class="set-alarm-container">
           <div class="set-alarm-container-title mb white-text">ALARMS</div>
           <div class="alarms-container" id= "alarms-container"></div>

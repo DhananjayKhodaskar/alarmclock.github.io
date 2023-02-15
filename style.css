@@ -1,0 +1,193 @@
+/* GLobal Styles */
+
+/* removing margin and padding */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  /* adding background image  */
+  body {
+    font-family: sans-serif;
+    background: url(background.png) no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+  }
+  
+
+  /* setting the display property to flex */
+  .flex {
+    display: flex;
+  }
+  
+
+  /* setting basics styles and mouse-pointer to buttons */
+  .btn {
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+
+
+  /* adding styles to select buttons */
+  select {
+    border: none;
+    appearance: none;
+    margin-right: 0.3rem;
+    outline: black;
+    border-radius: 2rem;
+    background-color: wheat;
+    padding: 0.5rem;
+    font-weight: bold;
+    border-color: black;
+    cursor: pointer; 
+  }
+
+
+  /* setting color and allignment for title'alarm clock'  */
+  .page-title{
+    align-items: center;
+    text-align: center;
+    color: wheat;
+    font-weight: 900;
+  }
+
+
+  /* simple class to add bottom margin  */
+  .mb {
+    margin-bottom: 1rem;
+  }
+
+
+  /* adding glassmorphism style to set alarm button */
+  .submit-btn {
+    border-radius: 2rem;
+    font-weight: bold;
+    background-color: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    padding: 8px;
+    border: 10px;
+  }
+
+
+  /* adding color change on hover on submit button */
+  .submit-btn:hover{
+    background-color: rgba(255,255,255,0.2);
+  }
+
+
+  /* End GLobal Styles */
+  .container-main {
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+  /* adding animations and basic padding and other basic things to clock container */
+  .container-clock {
+    animation: 4s ease-out 0s 1 blur;
+    padding: 2rem;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+
+  /* adding glassmorphism style to clock container */
+  .glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+  
+
+/* adding font size and weight to time */
+  .current-time {
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+  
+
+ /* setting basic things like font-size and weight etc*/
+  .time {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .set-alarm-container .set-alarm-container-title {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .set-alarm-container {
+    width: 100%;
+  }
+  .alarm-form {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  /* justifying and aligning items */
+  .alarm {
+    justify-content: space-between;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    align-items: center;
+  
+  }
+
+
+  /* setting basic style for delete */
+  .alarm .delete-alarm {
+    border-radius: 2rem;
+    background-color: rgb(133, 0, 0);
+    font-weight: bold;
+    color: wheat;
+    padding: 0.5rem;
+    font-size:xx-medium;
+  }
+
+
+  /* adding hover to delete button */
+  .delete-alarm:hover{
+    background-color: #e20404;
+  }
+  
+
+  /* this is the  code for animation which plays when page loads on browser */
+  @keyframes blur {
+    0% {
+      backdrop-filter: blur(0px);
+    }
+    100% {
+      backdrop-filter: blur(20px);
+    }
+  }
+
+
+  /* style of devices of screen size less than 768px */
+  @media only screen and (min-width: 600px) {
+    /* adding padding to container */
+    .container-main {
+      padding-block: 2rem;
+    }
+    .container-clock{
+        justify-content: center;
+        border-radius: 50px;
+        width: 450px;
+        min-height: auto;
+    }
+  }
+
+  
+
+ 
+

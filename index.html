@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Alarm Clock" content="Alarm Clock Using just Vanilla JS" />
+
+    <title>Alarm Clock</title>
+     <!-- Stylesheet/CSS file-->
+     <!-- Connecting CSS file to HTML file -->
+    <link rel = "stylesheet" href = "./style.css" />
+</head>
+<body>
+    <div class= "page-title">
+      <h1 >ALARM CLOCK  </h1>
+    </div>
+    <div class="container-main flex">
+      <div class="container-clock flex glass">
+        <img src="./icon.png" alt="" />
+        <div class="current-time mb white-text" id= "current-time">_ : _ : _ </div>
+        <form class="alarm-form flex mb ">
+          <div>
+          <select name="hour" id="hour" required></select>
+
+          <select required name="minute" id="minute"></select>
+
+          <select required name="second" id="second"></select>
+          <select required name="am-pm" id="am-pm">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+          </div>
+          <button class="btn submit-btn" id="submitBtn" type="submit">&nbsp;Set Alarm&nbsp;</button>
+        </form>
+        <div class="set-alarm-container">
+          <div class="set-alarm-container-title mb white-text">ALARMS</div>
+          <div class="alarms-container" id= "alarms-container"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+<!-- Linking javascript file  -->
+    <script src="./index.js"></script>
+</body>
+</html>
